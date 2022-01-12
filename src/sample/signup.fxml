@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="552.0" prefWidth="377.0" styleClass="primary-color" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.signupController">
+   <children>
+      <TextField fx:id="firstNameField" layoutX="77.0" layoutY="62.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter your first name" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-field" />
+            <String fx:value="primary-color" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="lastNameField" layoutX="75.0" layoutY="121.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter your last name" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-field" />
+            <String fx:value="primary-color" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="usernameSignupField" layoutX="75.0" layoutY="179.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter your username" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-field" />
+            <String fx:value="primary-color" />
+         </styleClass>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="75.0" layoutY="240.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter your password" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <styleClass>
+            <String fx:value="primary-color" />
+            <String fx:value="text-field" />
+         </styleClass>
+      </PasswordField>
+      <TextField fx:id="confirmPasswordField" layoutX="75.0" layoutY="301.0" prefHeight="45.0" prefWidth="225.0" promptText="Confirm your password" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-field" />
+            <String fx:value="primary-color" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="emailSignupField" layoutX="75.0" layoutY="358.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter your email" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-field" />
+            <String fx:value="primary-color" />
+         </styleClass>
+      </TextField>
+      <TextField fx:id="addressSignupField" layoutX="75.0" layoutY="418.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter your address (optional)" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-field" />
+            <String fx:value="primary-color" />
+         </styleClass>
+      </TextField>
+      <Label fx:id="notif" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="39.0" prefHeight="18.0" prefWidth="340.0" textAlignment="CENTER" textFill="#f9d276">
+         <font>
+            <Font name="Montserrat Medium" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="signupButton" alignment="CENTER" layoutX="129.0" layoutY="480.0" mnemonicParsing="false" onAction="#signupButtonAction" prefHeight="38.0" prefWidth="119.0" style="-fx-border-radius: 20;" text="SIGN UP" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="523.0" mnemonicParsing="false" onAction="#backButtonAction" style="-fx-border-color: #2b2e4a;" text="Back" textFill="#a4a4a4">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Button>
+      <TextField fx:id="specialCode" alignment="CENTER" layoutX="160.0" layoutY="7.0" prefHeight="26.0" prefWidth="55.0" promptText="CODE" style="-fx-background-color: #2b2e4a; -fx-border-color: #FFFFFF; -fx-border-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+   </children>
+</AnchorPane>

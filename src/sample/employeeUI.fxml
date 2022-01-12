@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="contentPane" prefHeight="761.0" prefWidth="824.0" style="-fx-background-color: #2b2e4a;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.employeeUIController">
+    <children>
+        <JFXButton fx:id="createCustomerButton" layoutX="308.0" layoutY="31.0" onAction="#createCustomerAction" prefHeight="79.0" prefWidth="242.0" ripplerFill="#3598d9" style="-fx-background-color: #d92525; -fx-background-radius: 30;" text="Create a customer" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="pendingOrderView" layoutX="114.0" layoutY="173.0" prefHeight="557.0" prefWidth="597.0" style="-fx-background-color: #2b2e4a; -fx-border-color: white;" styleClass="text-field" stylesheets="@style.css" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="usernameCol" prefWidth="139.0" text="Username" />
+                <TableColumn fx:id="order_idCol" prefWidth="362.0" text="Order ID" />
+                <TableColumn fx:id="statusCol" minWidth="0.0" prefWidth="95.0" text="Status" />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="refreshButton" alignment="CENTER" layoutX="114.0" layoutY="125.0" onAction="#refreshAction" prefHeight="48.0" prefWidth="135.0" ripplerFill="#284dab" style="-fx-background-radius: 10;" text="REFRESH" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/white-24dp/2x/outline_refresh_white_24dp.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <AnchorPane fx:id="createPane" layoutX="269.0" layoutY="215.0" prefHeight="447.0" prefWidth="320.0" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-color: #2b2e4a; -fx-background-radius: 10; -fx-opacity: 0.9;" stylesheets="@style.css">
+            <children>
+                <TextField fx:id="firstNameField" layoutX="49.0" layoutY="33.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter the first name" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="text-field" />
+                        <String fx:value="primary-color" />
+                    </styleClass>
+                </TextField>
+                <TextField fx:id="lastNameField" layoutX="49.0" layoutY="96.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter the last name" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="text-field" />
+                        <String fx:value="primary-color" />
+                    </styleClass>
+                </TextField>
+                <TextField fx:id="usernameField" layoutX="49.0" layoutY="160.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter the username" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="text-field" />
+                        <String fx:value="primary-color" />
+                    </styleClass>
+                </TextField>
+                <PasswordField fx:id="passwordField" layoutX="49.0" layoutY="226.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter the password" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+                    <styleClass>
+                        <String fx:value="primary-color" />
+                        <String fx:value="text-field" />
+                    </styleClass>
+                </PasswordField>
+                <TextField fx:id="emailField" layoutX="47.0" layoutY="291.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter the email" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="text-field" />
+                        <String fx:value="primary-color" />
+                    </styleClass>
+                </TextField>
+                <TextField fx:id="addressField" layoutX="49.0" layoutY="354.0" prefHeight="45.0" prefWidth="225.0" promptText="Enter the address (optional)" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="text-field" />
+                        <String fx:value="primary-color" />
+                    </styleClass>
+                </TextField>
+                <Label fx:id="closePane" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="406.0" onMouseClicked="#closeCreatePane" text="CLOSE" textAlignment="CENTER" textFill="WHITE" />
+                <Label fx:id="signup" alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="406.0" text="SIGN UP" textAlignment="CENTER" textFill="WHITE" />
+                <Label fx:id="notif" layoutX="52.0" layoutY="12.0" prefHeight="17.0" prefWidth="216.0" textFill="WHITE" />
+            </children>
+            <cursor>
+                <Cursor fx:constant="CLOSED_HAND" />
+            </cursor>
+        </AnchorPane>
+    </children>
+</AnchorPane>

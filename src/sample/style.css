@@ -1,0 +1,31 @@
+.primary-color{
+    -fx-background-color: #2b2e4a;
+}
+
+.secondary-color {
+    -fx-background-color: #ad1d45;
+}
+
+.text-field {
+    -fx-text-fill: #FFFFFF;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ad1d45;
+    -fx-background-color:#2b2e4a;
+}
+
+.button {
+   -fx-border-color: #ad1d45;
+   -fx-background-color: #2b2e4a;
+   -fx-background-radius: 20px;
+}
+
+.button: hover {
+   -fx-border-color: #ad1d45;
+   -fx-background-color: #f9d276;
+   -fx-background-radius: 20px;
+   -fx-font-family: "Montserrat SemiBold";
+}
+
+.jfoenix-text-area {
+    -fx-text-fill: white;
+}

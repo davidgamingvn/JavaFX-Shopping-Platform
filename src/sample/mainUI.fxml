@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="761.0" prefWidth="824.0" style="-fx-background-color: #2b2e4a;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainUIController">
+    <children>
+        <AnchorPane layoutX="43.0" layoutY="111.0" prefHeight="295.0" prefWidth="214.0">
+            <children>
+                <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/macbook%20air.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="item1" layoutX="47.0" layoutY="136.0" text="Macbook Air 2019" textFill="#dddddd">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="quantity1" alignment="CENTER" layoutX="74.0" layoutY="197.0" prefHeight="27.0" prefWidth="68.0" promptText="Quantity" styleClass="text-field" stylesheets="@style.css" />
+                <JFXButton fx:id="addMac" buttonType="RAISED" contentDisplay="CENTER" layoutX="71.0" layoutY="226.0" onAction="#addMacButtonAction" prefHeight="31.0" prefWidth="96.0" ripplerFill="#dd7474" text="Add to cart" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+                <ImageView fx:id="icon1" fitHeight="21.0" fitWidth="21.0" layoutX="50.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/outline_add_shopping_cart_white_24dp.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="price1" layoutX="78.0" layoutY="159.0" text="\$1000" textFill="#dddddd">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Label>
+            <JFXButton fx:id="removeMac" buttonType="RAISED" contentDisplay="CENTER" layoutX="37.0" layoutY="252.0" onAction="#removeMacButtonAction" prefHeight="31.0" prefWidth="142.0" ripplerFill="#dd7474" text="Remove from cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            </children></AnchorPane>
+        <JFXButton fx:id="cartButton" alignment="CENTER" layoutX="669.0" layoutY="23.0" onAction="#cartDisplay" prefHeight="69.0" prefWidth="141.0" text="Cart" textFill="WHITE">
+            <graphic>
+                <ImageView fx:id="cartIcon" fitHeight="51.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/outline_shopping_cart_white_36dp.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font size="26.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="accountDisplay" alignment="CENTER" layoutX="476.0" layoutY="20.0" onAction="#accountDisplay" prefHeight="75.0" prefWidth="193.0" style="-fx-border-radius: 3;" text="Account" textFill="WHITE">
+            <font>
+                <Font size="26.0" />
+            </font>
+            <graphic>
+                <ImageView fx:id="accountIcon" fitHeight="57.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/outline_account_circle_white_48dp.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+      <AnchorPane layoutX="316.0" layoutY="111.0" prefHeight="295.0" prefWidth="214.0">
+         <children>
+            <ImageView fx:id="image2" fitHeight="140.0" fitWidth="241.0" layoutX="-12.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/apple-iphone-x-front-uhd-4k-wallpaper.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="item2" layoutX="77.0" layoutY="137.0" text="Iphone X" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantity2" alignment="CENTER" layoutX="74.0" layoutY="197.0" prefHeight="27.0" prefWidth="68.0" promptText="Quantity" styleClass="text-field" stylesheets="@style.css" />
+            <JFXButton fx:id="addIphone" buttonType="RAISED" contentDisplay="CENTER" layoutX="71.0" layoutY="226.0" onAction="#addIphoneButtonAction" prefHeight="31.0" prefWidth="96.0" ripplerFill="#dd7474" text="Add to cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="icon11" fitHeight="21.0" fitWidth="21.0" layoutX="50.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/outline_add_shopping_cart_white_24dp.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="price2" layoutX="78.0" layoutY="159.0" text="\$1000" textFill="#dddddd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="removeMac1" buttonType="RAISED" contentDisplay="CENTER" layoutX="37.0" layoutY="252.0" onAction="#removeIphoneButtonAction" prefHeight="31.0" prefWidth="142.0" ripplerFill="#dd7474" text="Remove from cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="575.0" layoutY="111.0" prefHeight="295.0" prefWidth="214.0">
+         <children>
+            <ImageView fx:id="image3" fitHeight="150.0" fitWidth="200.0" layoutX="8.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/og__ch3csr9zmviq_specs.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="item3" layoutX="67.0" layoutY="137.0" text="Air Pods Pro" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantity3" alignment="CENTER" layoutX="74.0" layoutY="197.0" prefHeight="27.0" prefWidth="68.0" promptText="Quantity" styleClass="text-field" stylesheets="@style.css" />
+            <JFXButton fx:id="addAirpods" buttonType="RAISED" contentDisplay="CENTER" layoutX="71.0" layoutY="226.0" onAction="#addAirpodsButtonAction" prefHeight="31.0" prefWidth="96.0" ripplerFill="#dd7474" text="Add to cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="icon111" fitHeight="21.0" fitWidth="21.0" layoutX="50.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/outline_add_shopping_cart_white_24dp.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="price3" layoutX="78.0" layoutY="159.0" text="\$500" textFill="#dddddd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="removeAirpods" buttonType="RAISED" contentDisplay="CENTER" layoutX="37.0" layoutY="252.0" onAction="#removeAirpodsButtonAction" prefHeight="31.0" prefWidth="142.0" ripplerFill="#dd7474" text="Remove from cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="418.0" prefHeight="295.0" prefWidth="214.0">
+         <children>
+            <ImageView fx:id="image4" fitHeight="150.0" fitWidth="200.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/RE4tf03.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="item4" layoutX="64.0" layoutY="137.0" text="Surface Pro 7" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantity4" alignment="CENTER" layoutX="74.0" layoutY="197.0" prefHeight="27.0" prefWidth="68.0" promptText="Quantity" styleClass="text-field" stylesheets="@style.css" />
+            <JFXButton fx:id="addSurface" buttonType="RAISED" contentDisplay="CENTER" layoutX="71.0" layoutY="226.0" onAction="#addSurfaceButtonAction" prefHeight="31.0" prefWidth="96.0" ripplerFill="#dd7474" text="Add to cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="icon12" fitHeight="21.0" fitWidth="21.0" layoutX="50.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/outline_add_shopping_cart_white_24dp.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="price4" layoutX="78.0" layoutY="159.0" text="\$1300" textFill="#dddddd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="removeSurface" buttonType="RAISED" contentDisplay="CENTER" layoutX="37.0" layoutY="252.0" onAction="#removeSurfaceButtonAction" prefHeight="31.0" prefWidth="142.0" ripplerFill="#dd7474" text="Remove from cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="323.0" layoutY="418.0" prefHeight="295.0" prefWidth="214.0">
+         <children>
+            <ImageView fx:id="image5" fitHeight="127.0" fitWidth="221.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/krMdUog4bxjkXzUVDhWLHJ.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="item5" layoutX="41.0" layoutY="137.0" text="Sony WH-1000XM4" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantity5" alignment="CENTER" layoutX="74.0" layoutY="197.0" prefHeight="27.0" prefWidth="68.0" promptText="Quantity" styleClass="text-field" stylesheets="@style.css" />
+            <JFXButton fx:id="addSony" buttonType="RAISED" contentDisplay="CENTER" layoutX="71.0" layoutY="226.0" onAction="#addSonyButtonAction" prefHeight="31.0" prefWidth="96.0" ripplerFill="#dd7474" text="Add to cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="icon112" fitHeight="21.0" fitWidth="21.0" layoutX="50.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/outline_add_shopping_cart_white_24dp.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="price5" layoutX="78.0" layoutY="159.0" text="\$400" textFill="#dddddd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="removeSony" buttonType="RAISED" contentDisplay="CENTER" layoutX="37.0" layoutY="252.0" onAction="#removeSonyButtonAction" prefHeight="31.0" prefWidth="142.0" ripplerFill="#dd7474" text="Remove from cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="582.0" layoutY="418.0" prefHeight="295.0" prefWidth="214.0">
+         <children>
+            <ImageView fx:id="image6" fitHeight="162.0" fitWidth="221.0" layoutX="14.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Gear-galaxys21_plus_phantom_silver_front.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="item6" layoutX="72.0" layoutY="137.0" text="Galaxy S21" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantity6" alignment="CENTER" layoutX="74.0" layoutY="197.0" prefHeight="27.0" prefWidth="68.0" promptText="Quantity" styleClass="text-field" stylesheets="@style.css" />
+            <JFXButton fx:id="addGalaxy" buttonType="RAISED" contentDisplay="CENTER" layoutX="71.0" layoutY="226.0" onAction="#addGalaxyButtonAction" prefHeight="31.0" prefWidth="96.0" ripplerFill="#dd7474" text="Add to cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="icon1111" fitHeight="21.0" fitWidth="21.0" layoutX="50.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/outline_add_shopping_cart_white_24dp.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="price6" layoutX="78.0" layoutY="159.0" text="\$1500" textFill="#dddddd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="removeGalaxy" buttonType="RAISED" contentDisplay="CENTER" layoutX="37.0" layoutY="252.0" onAction="#removeGalaxyButtonAction" prefHeight="31.0" prefWidth="142.0" ripplerFill="#dd7474" text="Remove from cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="cartStackPane" focusTraversable="true" layoutX="226.0" layoutY="179.0" prefHeight="355.0" prefWidth="379.0" styleClass="jfoenix-text-area">
+         <children>
+            <JFXDialogLayout prefHeight="340.0" prefWidth="379.0" style="-fx-background-color: #2b2e4a; -fx-opacity: 1;">
+               <children>
+                  <JFXDialog fx:id="cartDialog" cacheContainer="true" styleClass="jfoenix-text-area" stylesheets="@style.css" />
+               </children>
+            </JFXDialogLayout>
+         </children>
+      </StackPane>
+    </children>
+</AnchorPane>

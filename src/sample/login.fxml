@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="552.0" prefWidth="377.0" style="-fx-background-color: #2b2e4a;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <children>
+      <ImageView fx:id="asuLogo" fitHeight="181.0" fitWidth="114.0" layoutX="143.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/asu%20logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameField" layoutX="76.0" layoutY="221.0" prefHeight="45.0" prefWidth="225.0" promptText="Username" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-field" />
+            <String fx:value="primary-color" />
+         </styleClass>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="77.0" layoutY="287.0" prefHeight="45.0" prefWidth="225.0" promptText="Password" style="-fx-border-color: #ad1d45; -fx-border-radius: 10;">
+         <styleClass>
+            <String fx:value="primary-color" />
+            <String fx:value="text-field" />
+         </styleClass></PasswordField>
+      <Button fx:id="loginButton" alignment="CENTER" layoutX="138.0" layoutY="399.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="36.0" prefWidth="103.0" style="-fx-border-radius: 20;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="orText" fill="#757575" layoutX="182.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="signupButton" alignment="CENTER" layoutX="138.0" layoutY="466.0" mnemonicParsing="false" onAction="#signupAction" prefHeight="36.0" prefWidth="103.0" style="-fx-border-radius: 20;" text="SIGN UP" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="notif" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="357.0" prefHeight="18.0" prefWidth="340.0" textAlignment="CENTER" textFill="#f9d276">
+         <font>
+            <Font name="Montserrat Medium" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
